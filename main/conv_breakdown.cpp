@@ -41,6 +41,14 @@
 
 using ConvDiag = std::unordered_map<int, std::vector<std::tuple<double,int,int>>>;
 
+// DIA bytes as diamond.cpp charges HBM: stored elements * sizeof(DataPackage) (16 B: 8 val + 2 idx).
+// Matches the measured "[conv] ... HBM X MiB" so the Gantt memory lane reconciles with the binary.
+static long long bytesOf(const ConvDiag& M) {
+    long long b = 0;
+    for (const auto& [o, e] : M) b += (long long)e.size() * 16;
+    return b;
+}
+
 // ---- COPY of diamond.cpp:loadDiaMatrix (DIA file "N <n> D <d>" then "<off>: v v ...") ----
 static long loadDiaMatrix(const std::string& filename,
                           std::vector<int>& offsets, ConvDiag& diag) {
@@ -262,16 +270,32 @@ int main(int argc, char** argv) {
         if (K <= 0) K = 1;
     }
 
+    const std::string gantt = args.count("gantt") ? args["gantt"] : "";
+    std::ofstream gout;
+    if (!gantt.empty()) {
+        gout.open(gantt);
+        gout << "iter,compute_mac_cyc,gather_thr_cyc,filldrain_cyc,exposed_cyc,hidden_cyc,"
+                "hbm_read_bytes,hbm_write_bytes\n";
+    }
+    const long long H_bytes = bytesOf(H);
     long tot_makespan = 0, tot_compute = 0, tot_gather = 0, tot_filldrain = 0, tot_exposed = 0, tot_hidden = 0;
     for (int it = 0; it < K; ++it) {
         long ms = 0, cm = 0, gt = 0, fd = 0;
+        const long long readB = bytesOf(current) + H_bytes + (it == 0 ? H_bytes : 0);  // read prev + re-read H (+init read H once)
         ConvDiag C = convOnGrid(current, H, static_cast<int>(n), S, zeroskip, cbalance, ms, cm, gt, fd, reduce_lanes);
+        const long long writeB = bytesOf(C);                                            // write new power
         const long exposed = std::max(0L, gt - cm);
         const long hidden  = std::min(cm, gt);
         tot_makespan += ms; tot_compute += cm; tot_gather += gt; tot_filldrain += fd;
         tot_exposed += exposed; tot_hidden += hidden;
+        if (gout) {
+            gout << it << ',' << cm << ',' << gt << ',' << fd << ',' << exposed << ',' << hidden << ','
+                 << readB << ',' << writeB << '\n';
+            gout.flush();                                   // per-iter flush so progress survives a kill
+        }
         current = std::move(C);
     }
+    if (gout) gout.close();
     const long serial = tot_compute + tot_gather + tot_filldrain;   // hypothetical no-overlap
     const long overlap_savings = tot_hidden;                        // serial - makespan
     const double hidden_pct = tot_gather > 0 ? 100.0 * (double)tot_hidden / (double)tot_gather : 0.0;
