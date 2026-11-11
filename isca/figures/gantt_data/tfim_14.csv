@@ -1,0 +1,5 @@
+iter,compute_mac_cyc,gather_thr_cyc,filldrain_cyc,exposed_cyc,hidden_cyc,hbm_read_bytes,hbm_write_bytes
+0,64,64,38,0,64,786432,262144
+1,64,64,38,0,64,524288,262144
+2,64,64,38,0,64,524288,262144
+3,64,64,38,0,64,524288,262144

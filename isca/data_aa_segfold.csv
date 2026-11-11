@@ -1,0 +1,49 @@
+impl,workload,q,K,class,pe,cycles_total,per_step_cycles,per_step_nnz,status,sec
+segfold,bh_20_5,20,1,fill-in,16x16,,,25786605,TIMEOUT(H^1),7203.9
+segfold,Li2_14_6,14,1,fill-in,16x16,5312226,5312226,696668,OK,2493.5
+segfold,O2_16_6,16,1,fill-in,16x16,,,4834495,CRASH:  what():  vector::reserve(H^1),175.7
+segfold,bh_14_5,14,1,fill-in,16x16,494400,494400,268487,OK,140.0
+segfold,bh_16_5,16,1,fill-in,16x16,,,1276483,OOM(H^1),36.0
+segfold,tsp_16_4,16,1,special,16x16,89263,89263,59180,OK,67.6
+segfold,reg3_16_4,16,1,diagonal,16x16,75888,75888,54622,OK,175.6
+segfold,tfim_18_4,18,1,diagonal,16x16,,,262144,CRASH:munmap_chunk(): invalid pointer(H^1),21.7
+segfold,reg3_18_4,18,1,diagonal,16x16,,,262144,CRASH:munmap_chunk(): invalid pointer(H^1),21.4
+segfold,reg3_20_4,20,1,diagonal,16x16,,,896244,CRASH:  what():  vector::reserve(H^1),480.3
+segfold,maxcut_16_5,16,1,diagonal,16x16,58393,58393,34596,OK,113.6
+segfold,maxcut_18_5,18,1,diagonal,16x16,,,262144,CRASH:munmap_chunk(): invalid pointer(H^1),32.8
+segfold,maxcut_20_5,20,1,diagonal,16x16,,,595984,CRASH:[init] Creating simulator (tiling/preprocessing)..(H^1),226.9
+segfold,tfim_16_4,16,1,diagonal,16x16,123359,123359,65536,OK,160.2
+segfold,qmaxcut_16_4,16,1,banded,16x16,,,557056,CRASH:  what():  vector::reserve(H^1),11.0
+segfold,qmaxcut_18_4,18,1,banded,16x16,,,2490368,CRASH:  what():  vector::reserve(H^1),108.0
+segfold,qmaxcut_20_4,20,1,banded,16x16,,,11010048,CRASH:malloc(): invalid size (unsorted)(H^1),3795.0
+segfold,fermi_16_4,16,1,banded,16x16,,,503876,OOM(H^1),91.7
+segfold,tfim_20_5,20,1,diagonal,16x16,,,1048576,CRASH:munmap_chunk(): invalid pointer(H^1),376.4
+segfold,fermi_18_5,18,1,banded,16x16,,,2359296,CRASH:munmap_chunk(): invalid pointer(H^1),182.4
+segfold,fermi_20_5,20,1,banded,16x16,,,10485760,CRASH:munmap_chunk(): invalid pointer(H^1),4274.7
+segfold,heis_14_5,14,1,banded,16x16,101094,101094,122880,OK,13.9
+segfold,heis_16_5,16,1,banded,16x16,,,557056,CRASH:  what():  vector::reserve(H^1),4.6
+segfold,max3sat_14_4,14,1,single-diagonal,16x16,28751,28751,16384,OK,4.2
+segfold,max3sat_16_4,16,1,single-diagonal,16x16,73628,73628,51921,OK,198.9
+segfold,max3sat_18_4,18,1,single-diagonal,16x16,,,262144,CRASH:munmap_chunk(): invalid pointer(H^1),11.7
+segfold,max3sat_20_4,20,1,single-diagonal,16x16,,,861390,CRASH:[init] Creating simulator (tiling/preprocessing)..(H^1),504.7
+segfold,maxkcut_14_4,14,1,single-diagonal,16x16,28751,28751,16384,OK,4.2
+segfold,reg3_14_4,14,1,diagonal,16x16,28751,28751,16384,OK,9.5
+segfold,maxkcut_16_4,16,1,single-diagonal,16x16,69227,69227,48736,OK,116.4
+segfold,maxkcut_18_4,18,1,single-diagonal,16x16,,,225184,CRASH:  what():  vector::reserve(H^1),23.2
+segfold,maxkcut_20_4,20,1,single-diagonal,16x16,,,1048576,CRASH:munmap_chunk(): invalid pointer(H^1),185.7
+segfold,vib_14_4,14,1,fill-in,16x16,,,3607489,CRASH:  what():  vector::reserve(H^1),42.6
+segfold,vib_16_4,16,1,fill-in,16x16,,,21275521,OOM(H^1),404.7
+segfold,vib_18_4,18,1,fill-in,16x16,,,156148570,OOM(H^1),992.0
+segfold,fv1,14,1,banded,16x16,66577,66577,85264,OK,12.0
+segfold,flowmeter0,14,1,fill-in,16x16,41363,41363,67391,OK,8.4
+segfold,tols4000,12,1,fill-in,16x16,11837,11837,8784,OK,1.7
+segfold,rdb5000,13,1,banded,16x16,20682,20682,29600,OK,2.8
+segfold,maxcut_14_5,14,1,diagonal,16x16,28751,28751,16384,OK,7.9
+segfold,tsp_18_4,18,1,diagonal,16x16,,,262144,CRASH:munmap_chunk(): invalid pointer(H^1),12.1
+segfold,qmaxcut_14_4,14,1,banded,16x16,90112,90112,122880,OK,25.8
+segfold,tfim_14_4,14,1,diagonal,16x16,28751,28751,16384,OK,4.2
+segfold,fermi_14_4,14,1,banded,16x16,89982,89982,114688,OK,20.7
+segfold,heis_18_5,18,1,banded,16x16,,,2490368,CRASH:  what():  vector::reserve(H^1),130.7
+segfold,heis_20_6,20,1,banded,16x16,,,11010048,CRASH:munmap_chunk(): invalid pointer(H^1),4564.1
+segfold,chem_14_4,14,1,fill-in,16x16,1705428,1705428,398733,OK,443.8
+segfold,bh_18_5,18,1,fill-in,16x16,,,5782055,CRASH:[init] Creating simulator (tiling/preprocessing)..(H^1),519.7

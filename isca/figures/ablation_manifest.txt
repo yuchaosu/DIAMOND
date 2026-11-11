@@ -1,0 +1,9 @@
+dia_oom|tfim_14_4|diagonal|l1|0|0
+dia_oom|tfim_14_4|diagonal|l2|1|0
+dia_oom|tfim_14_4|diagonal|l3|1|1
+dia_families|qmaxcut_14_4|banded|l1|0|0
+dia_families|qmaxcut_14_4|banded|l2|1|0
+dia_families|qmaxcut_14_4|banded|l3|1|1
+dia_expand|bh_14_5|fill-in|l1|0|0
+dia_expand|bh_14_5|fill-in|l2|1|0
+dia_expand|bh_14_5|fill-in|l3|1|1

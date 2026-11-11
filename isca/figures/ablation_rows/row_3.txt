@@ -1,0 +1,1 @@
+banded|qmaxcut_14_4|l1|[conv] zeroskip=0 cbalance=0 pe=256 | compute 28253550 cyc | ops: mac=1171879748 cmp=1171879748 router=16267878499 accum=1171879748 | HBM 528.33 MiB, mem-latency 0.00 %, max_offset 16383

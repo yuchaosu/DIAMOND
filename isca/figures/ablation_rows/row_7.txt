@@ -1,0 +1,1 @@
+fill-in|bh_14_5|l2|[conv] zeroskip=1 cbalance=0 pe=256 | compute 17207059 cyc | ops: mac=951345327 cmp=951345327 router=13450735360 accum=951345327 | HBM 3092.36 MiB, mem-latency 0.00 %, max_offset 16381

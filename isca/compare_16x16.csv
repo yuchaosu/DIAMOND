@@ -1,0 +1,34 @@
+workload,family,q,K,class,diamond_l3_cyc,flexgus_cyc,flexop_cyc,traphs_cyc,tpu_cyc,segfold_cyc,diamond_status,flexgus_status,flexop_status,traphs_status,tpu_status,segfold_status,spdup_vs_flexgus,spdup_vs_flexop,spdup_vs_traphs,spdup_vs_tpu,spdup_vs_segfold
+Li2_14_6,Li2,14,6,fill-in,12298676,,,246130867,103280541696,,OK,TIMEOUT(H^1),TIMEOUT(H^2),OK,OK,-,-,-,20.01,8397.70,-
+O2_16_6,O2,16,6,fill-in,,,,,6600290992128,,OOM,-,-,OOM,OK,CRASH:  what():  vector::reserve(H^1),-,-,-,-,-
+bh_14_5,bh,14,5,fill-in,9192402,,,252544540,86067118080,,OK,TIMEOUT(H^2),TIMEOUT(H^3),OK,OK,-,-,-,27.47,9362.85,-
+bh_16_5,bh,16,5,fill-in,,,,,5500242493440,,OOM,-,-,OOM,OK,-,-,-,-,-,-
+bh_18_5,bh,18,5,fill-in,,,,,351886670561280,,TIMEOUT,-,-,OOM,OK,CRASH:[init] Creating simulator (tiling/preprocessing)..(H^1),-,-,-,-,-
+bh_20_5,bh,20,5,fill-in,,,,,22518685331619840,,OOM,-,-,OOM,OK,-,-,-,-,-,-
+chem_14_4,chem,14,4,fill-in,1788944,,,62554658,68853694464,,OK,TIMEOUT(H^2),TIMEOUT(H^3),OK,OK,-,-,-,34.97,38488.46,-
+fermi_14_4,fermi,14,4,banded,116126,,36372084,9622569,68853694464,3142480,OK,TIMEOUT(H^3),OK,OK,OK,OK,-,313.21,82.86,592922.30,27.06
+fermi_16_4,fermi,16,4,banded,772434,,,69665209,4400193994752,,OK,-,-,OK,OK,-,-,-,90.19,5696530.70,-
+fermi_18_5,fermi,18,5,banded,,,,935819419,351886670561280,,OOM,-,-,OK,OK,CRASH:munmap_chunk(): invalid pointer(H^1),-,-,-,-,-
+fermi_20_5,fermi,20,5,banded,,,,,22518685331619840,,OOM,-,-,TIMEOUT,OK,-,-,-,-,-,-
+heis_14_5,heis,14,5,banded,332942,,135079043,24312219,86067118080,,OK,TIMEOUT(H^4),OK,OK,OK,-,-,405.71,73.02,258504.84,-
+heis_16_5,heis,16,5,banded,2481113,,,184308715,5500242493440,,OK,-,-,OK,OK,CRASH:  what():  vector::reserve(H^1),-,-,74.28,2216844.82,-
+heis_18_5,heis,18,5,banded,,,,,351886670561280,,OOM,-,-,OOM,OK,CRASH:  what():  vector::reserve(H^1),-,-,-,-,-
+heis_20_6,heis,20,6,banded,,,,,27022422397943808,,OOM,-,-,TIMEOUT,OK,-,-,-,-,-,-
+maxcut_14_5,maxcut,14,5,diagonal,510,20623915,1189865,168996,86067118080,143755,OK,OK,OK,OK,OK,OK,40439.05,2333.07,331.36,168759055.06,281.87
+maxcut_16_5,maxcut,16,5,diagonal,870,,,356931,5500242493440,291965,OK,-,-,OK,OK,OK,-,-,410.27,6322117808.55,335.59
+maxcut_18_5,maxcut,18,5,diagonal,5310,,,2703396,351886670561280,,OK,-,-,OK,OK,CRASH:munmap_chunk(): invalid pointer(H^1),-,-,509.11,66268676188.56,-
+maxcut_20_5,maxcut,20,5,diagonal,11835,,,6146121,22518685331619840,,OK,-,-,OK,OK,CRASH:[init] Creating simulator (tiling/preprocessing)..(H^1),-,-,519.32,1902719504150.39,-
+qmaxcut_14_4,qmaxcut,14,4,banded,310068,,,29563428,68853694464,,OK,TIMEOUT(H^2),TIMEOUT(H^4),OK,OK,-,-,-,95.34,222059.98,-
+qmaxcut_16_4,qmaxcut,16,4,banded,2320776,,,235090468,4400193994752,,OK,-,-,OK,OK,CRASH:  what():  vector::reserve(H^1),-,-,101.30,1896001.16,-
+qmaxcut_18_4,qmaxcut,18,4,banded,,,,,281509336449024,,OOM,-,-,OOM,OK,CRASH:  what():  vector::reserve(H^1),-,-,-,-,-
+qmaxcut_20_4,qmaxcut,20,4,banded,,,,,18014948265295872,,OOM,-,-,TIMEOUT,OK,-,-,-,-,-,-
+reg3_14_4,reg3,14,4,diagonal,408,16499132,951892,135204,68853694464,115004,OK,OK,OK,OK,OK,OK,40439.05,2333.07,331.38,168759055.06,281.87
+reg3_16_4,reg3,16,4,diagonal,1008,,,450684,4400193994752,303552,OK,-,-,OK,OK,OK,-,-,447.11,4365271820.19,301.14
+reg3_18_4,reg3,18,4,diagonal,4248,,,2162724,281509336449024,,OK,-,-,OK,OK,CRASH:munmap_chunk(): invalid pointer(H^1),-,-,509.12,66268676188.56,-
+reg3_20_4,reg3,20,4,diagonal,14156,,,,18014948265295872,,OK,-,-,TIMEOUT,OK,CRASH:  what():  vector::reserve(H^1),-,-,-,1272601601108.78,-
+tfim_14_4,tfim,14,4,diagonal,408,16499132,951892,135204,68853694464,115004,OK,OK,OK,OK,OK,OK,40439.05,2333.07,331.38,168759055.06,281.87
+tfim_16_4,tfim,16,4,diagonal,1176,,,540708,4400193994752,493436,OK,-,-,OK,OK,OK,-,-,459.79,3741661560.16,419.59
+tfim_18_4,tfim,18,4,diagonal,4248,,,2162724,281509336449024,,OK,-,-,OK,OK,CRASH:munmap_chunk(): invalid pointer(H^1),-,-,509.12,66268676188.56,-
+tfim_20_5,tfim,20,5,diagonal,20670,,,,22518685331619840,,OK,-,-,TIMEOUT,OK,CRASH:munmap_chunk(): invalid pointer(H^1),-,-,-,1089438090547.65,-
+tsp_16_4,tsp,16,4,special,1080,,,488304,4400193994752,,OK,-,-,OK,OK,-,-,-,452.13,4074253698.84,-
+tsp_18_4,tsp,18,4,special,4248,,,2162724,281509336449024,,OK,-,-,OK,OK,CRASH:munmap_chunk(): invalid pointer(H^1),-,-,509.12,66268676188.56,-

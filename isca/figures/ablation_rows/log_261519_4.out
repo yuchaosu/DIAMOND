@@ -1,0 +1,1 @@
+done banded l2 -> [conv] zeroskip=1 cbalance=0 pe=256 | compute 3998720 cyc | ops: mac=79338496 cmp=79338496 router=1046015488 accum=79338496 | HBM 528.33 MiB, mem-latency 0.00 %, max_offset 14329

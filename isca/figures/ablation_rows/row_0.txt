@@ -1,0 +1,1 @@
+diagonal|tfim_14_4|l1|[conv] zeroskip=0 cbalance=0 pe=256 | compute 65536 cyc | ops: mac=65536 cmp=65536 router=0 accum=65536 | HBM 3.25 MiB, mem-latency 0.00 %, max_offset 0

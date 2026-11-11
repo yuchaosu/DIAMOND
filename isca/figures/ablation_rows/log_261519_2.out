@@ -1,0 +1,1 @@
+done diagonal l3 -> [conv] zeroskip=1 cbalance=1 pe=256 | compute 408 cyc | ops: mac=65536 cmp=65536 router=983040 accum=65536 | HBM 3.25 MiB, mem-latency 75.48 %, max_offset 0

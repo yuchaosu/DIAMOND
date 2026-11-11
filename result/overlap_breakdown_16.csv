@@ -1,0 +1,4 @@
+tag,file,n,S,K,zeroskip,cbalance,reduce_lanes,compute_mac,gather_thr,filldrain,gather_exposed,gather_hidden,makespan,serial,overlap_savings
+asym_6,scratch_asym/asym_6.txt,6,16,2,1,1,0,2,2,76,0,2,78,80,2
+asym_6,scratch_asym/asym_6.txt,6,16,2,1,1,8,2,15,76,13,2,91,93,2
+asym_6,scratch_asym/asym_6.txt,6,16,2,1,1,16,2,8,76,6,2,84,86,2
